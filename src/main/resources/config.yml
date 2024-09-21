@@ -5,7 +5,7 @@ Settings:
     - "world_nether"
     - "world_the_end"
   radius-check: 3
-  drain-chance: 0.9
+  drain-chance: 1.0
 
 Messages:
   config-reloaded: "&aConfiguration Reloaded!"

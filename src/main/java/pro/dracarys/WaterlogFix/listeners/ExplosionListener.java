@@ -43,7 +43,7 @@ public class ExplosionListener implements Listener {
             for (int y = -radius; y <= radius; y++) {
                 for (int z = -radius; z <= radius; z++) {
                     Location loc = new Location(source.getWorld(), x + source.getX(), y + source.getY(), z + source.getZ());
-                    if (source.distance(loc) <= dmgRadius && loc.getY() > 0 && (chance == 1 || Math.random() <= chance)) {
+                    if (source.distance(loc) <= dmgRadius && (chance == 1 || Math.random() <= chance)) {
                         setWaterlogged(loc.getBlock(), false);
                     }
                 }
